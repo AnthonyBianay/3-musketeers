@@ -9,7 +9,9 @@ const config = new Conf();
 const argv = process.argv.slice(2);
 
 helpers(argv);
-
+/**
+ *Redirect the command
+ */
 const command = {
   'amount': argv[0] || 1,
   'from': argv[1] || config.get('defaultFrom', 'USD'),
